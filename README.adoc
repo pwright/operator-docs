@@ -1,0 +1,21 @@
+= Creating operator reference documentation
+
+
+.Prerequisites
+
+* link:https://www.cyberciti.biz/open-source/command-line-hacks/using-htmlq-to-extract-content-from-html-files-on-linux-unix/[How to use htmlq to extract content from HTML files on Linux - nixCraft]
+
+* Python 3
+
+* jq
+
+* wget
+
+
+.Procedure
+
+. Create CRD docs at https://doc.crds.dev/
+
+. Edit `get.sh` and add each page URL from CRD docs.
+
+. Run `./process.sh`
