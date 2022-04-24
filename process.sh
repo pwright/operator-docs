@@ -1,3 +1,3 @@
 ./get.sh
 
-./plano
+./plano generate

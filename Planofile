@@ -1,0 +1,55 @@
+
+@command
+def generate(app):
+    """
+    Generate json, and dpath files from html in build directory.
+    """
+    with working_dir('build'):
+        print(get_current_dir())
+        for path in find("./", "*.html"):
+            print(get_base_name(path))
+
+            
+            #extract json from html using *htmlq*
+            cmd = "htmlq -f " + get_base_name(path) + " '#pageData' " 
+            result = call(cmd)
+            result = replace(result, '<script id="pageData" type="application/json">', '', count=1)
+            result = replace(result, '</script>', '', count=1)
+            # write json file
+            write(get_name_stem(path) + ".json", result)
+
+
+            # process json file using *jq* to get description paths (dpath)
+            cmd = "jq -cf ../program.jq " + get_name_stem(path) + ".json"
+            print('cmd:' + cmd)
+            result = call(cmd)
+
+            result = replace(result,'","','.' )
+            result = replace(result,'\["','' )
+            result = replace(result,'"\]','' )
+            # write dpath file
+            write(get_name_stem(path) + ".dpath", result)
+
+            
+            
+            print(result)
+
+@command
+def populate(app):
+    """
+    Generate markdown files from json, and dpath files in build directory.
+    """
+    with working_dir('build'):
+        print(get_current_dir())
+        for path in find("./", "*.dpath"):
+            print(get_base_name(path))
+            for line in read_lines(path):
+                line = line.rstrip()
+                cmd = 'jq .' + line + ' ' + get_name_stem(path) + ".json"
+                result = call(cmd)
+                print(result)
+                write('../data/'+ line +'md', "# " +line + "\n\n" + result)
+
+
+
+            

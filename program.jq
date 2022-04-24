@@ -1,0 +1,1 @@
+paths | select(.[-1] == "Description")
