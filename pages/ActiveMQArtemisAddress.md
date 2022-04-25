@@ -1,4 +1,5 @@
 # ActiveMQArtemisAddress
+page:: ActiveMQArtemisAddress
 
 ## ActiveMQArtemisAddress.ActiveMQArtemisAddress
 

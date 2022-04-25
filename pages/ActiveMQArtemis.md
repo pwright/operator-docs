@@ -1,4 +1,5 @@
 # ActiveMQArtemis
+page:: ActiveMQArtemis
 
 ## ActiveMQArtemis.ActiveMQArtemis
 

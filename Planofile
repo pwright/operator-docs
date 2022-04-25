@@ -45,7 +45,7 @@ def populate(app):
         print(get_current_dir())
         for path in find("./", "*.dpath"):
             mdfile=get_name_stem(path)
-            write('../pages/'+mdfile+'.md', '# '+ mdfile + '\n\n')
+            write('../pages/'+mdfile+'.md', '# '+ mdfile + '\npage:: ' +mdfile +'\n\n')
 
             print(mdfile)
             for line in read_lines(path):

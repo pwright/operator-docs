@@ -1,4 +1,5 @@
 # ActiveMQArtemisScaledown
+page:: ActiveMQArtemisScaledown
 
 ## ActiveMQArtemisScaledown.ActiveMQArtemisScaledown
 
