@@ -12,22 +12,22 @@ def generate(app):
             
             # process json file using *jq* to get description paths (dpath)
             cmd = "yq -o=json " + get_name_stem(path) + ".yaml > " + get_name_stem(path) + ".json"
-           
-            result = call(cmd)
+            
+            result = call(cmd,"","shell=true")
+            print(result)
 
             cmd = "cat " + get_name_stem(path) + ".json" + "|jq -cf ../program.jq "
             print('cmd:' + cmd)
-            result = call(cmd)
+            result = call(cmd,"","shell=true")
+            #print(result)
 
             result = replace(result,'","','.' )
             result = replace(result,'\["', get_name_stem(path)+'.' )
             result = replace(result,'"\]','' )
             # write dpath file
             write(get_name_stem(path) + ".dpath", result)
-
             
-            
-            print(result)
+            #print(result)
 
 @command
 def populate(app):
