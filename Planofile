@@ -2,25 +2,20 @@
 @command
 def generate(app):
     """
-    Generate json, and dpath files from html in build directory.
+    Generate json, and dpath files from yaml in build directory.
     """
     with working_dir('build'):
         print(get_current_dir())
-        for path in find("./", "*.html"):
+        for path in find("./", "*.yaml"):
             print(get_base_name(path))
 
             
-            #extract json from html using *htmlq*
-            cmd = "htmlq -f " + get_base_name(path) + " '#pageData' " 
-            result = call(cmd)
-            result = replace(result, '<script id="pageData" type="application/json">', '', count=1)
-            result = replace(result, '</script>', '', count=1)
-            # write json file
-            write(get_name_stem(path) + ".json", result)
-
-
             # process json file using *jq* to get description paths (dpath)
-            cmd = "jq -cf ../program.jq " + get_name_stem(path) + ".json"
+            cmd = "yq -o=json " + get_name_stem(path) + ".yaml > " + get_name_stem(path) + ".json"
+           
+            result = call(cmd)
+
+            cmd = "cat " + get_name_stem(path) + ".json" + "|jq -cf ../program.jq "
             print('cmd:' + cmd)
             result = call(cmd)
 

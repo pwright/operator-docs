@@ -1,1 +1,1 @@
-paths | select(.[-1] == "Description")
+paths | select(.[-1] == "description")
