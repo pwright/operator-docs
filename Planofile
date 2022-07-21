@@ -6,7 +6,7 @@ def generate(app):
     """
     with working_dir('build'):
         print(get_current_dir())
-        for path in find("./", "*.yaml"):
+        for path in find("./", "*.yml"):
             print(get_base_name(path))
 
             
