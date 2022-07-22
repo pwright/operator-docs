@@ -12,12 +12,13 @@
 * wget
 
 
+//yq '.spec.versions.[]' test.yml -s '.name'
+
+
 .Procedure
 
 . Create CRD docs at https://doc.crds.dev/
 
 . Edit `get.sh` and add each page URL from CRD docs.
-
-yq -s '.spec.names.kind' artemis-101.yaml 
 
 . Run `./process.sh`

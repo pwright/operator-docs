@@ -1,0 +1,573 @@
+# ActiveMQArtemisSecurity.v1beta1
+
+
+.schema.openAPIV3Schema.description
+"ActiveMQArtemisSecurity is the Schema for the activemqartemissecurities API"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.description]
+
+.schema.openAPIV3Schema.properties.apiVersion.description
+"APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.apiVersion.description]
+
+.schema.openAPIV3Schema.properties.kind.description
+"Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.kind.description]
+
+.schema.openAPIV3Schema.properties.spec.description
+"ActiveMQArtemisSecuritySpec defines the desired state of ActiveMQArtemisSecurity"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.applyToCrNames.description
+"Apply this security config to the broker crs in the current namespace. A value of * or empty string means applying to all broker crs. Default apply to all broker crs"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.applyToCrNames.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.guestLoginModules.items.properties.guestRole.description
+"The guest user role"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.guestLoginModules.items.properties.guestRole.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.guestLoginModules.items.properties.guestUser.description
+"The guest user name"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.guestLoginModules.items.properties.guestUser.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.guestLoginModules.items.properties.name.description
+"Name for GuestLoginModule"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.guestLoginModules.items.properties.name.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.allowAnyHostName.description
+"If to allow any host name"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.allowAnyHostName.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.alwaysRefreshToken.description
+"If always refresh token"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.alwaysRefreshToken.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.authServerUrl.description
+"URL of the keycloak authentication server"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.authServerUrl.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.autoDetectBearerOnly.description
+"If auto-detect bearer token only"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.autoDetectBearerOnly.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.bearerOnly.description
+"If only verify bearer token"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.bearerOnly.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.clientKeyPassword.description
+"Client key password"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.clientKeyPassword.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.clientKeyStore.description
+"Path of a client keystore"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.clientKeyStore.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.clientKeyStorePassword.description
+"Client keystore password"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.clientKeyStorePassword.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.confidentialPort.description
+"The confidential port used by the Keycloak server for secure connections over SSL/TLS"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.confidentialPort.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.connectionPoolSize.description
+"Size of the connection pool"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.connectionPoolSize.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.corsAllowedHeaders.description
+"CORS allowed headers"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.corsAllowedHeaders.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.corsAllowedMethods.description
+"CORS allowed methods"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.corsAllowedMethods.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.corsExposedHeaders.description
+"CORS exposed headers"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.corsExposedHeaders.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.corsMaxAge.description
+"CORS max age"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.corsMaxAge.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.credentials.items.properties.key.description
+"The credentials key"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.credentials.items.properties.key.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.credentials.items.properties.value.description
+"The credentials value"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.credentials.items.properties.value.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.disableTrustManager.description
+"If to disable trust manager"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.disableTrustManager.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.enableBasicAuth.description
+"Whether to support basic authentication"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.enableBasicAuth.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.enableCors.description
+"If to enable CORS"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.enableCors.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.exposeToken.description
+"If to expose access token"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.exposeToken.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.ignoreOauthQueryParameter.description
+"Whether to turn off processing of the access_token query parameter for bearer token processing"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.ignoreOauthQueryParameter.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.minTimeBetweenJwksRequests.description
+"Minimum interval between two requests to Keycloak to retrieve new public keys"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.minTimeBetweenJwksRequests.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.principalAttribute.description
+"OpenID Connect ID Token attribute to populate the UserPrincipal name with"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.principalAttribute.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.proxyUrl.description
+"The proxy URL"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.proxyUrl.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.publicClient.description
+"If it is public client"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.publicClient.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.publicKeyCacheTtl.description
+"Maximum interval between two requests to Keycloak to retrieve new public keys"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.publicKeyCacheTtl.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.realm.description
+"Realm for KeycloakLoginModule"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.realm.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.realmPublicKey.description
+"Public key for the realm"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.realmPublicKey.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.redirectRewriteRules.description
+"The regular expression to which the Redirect URI is to be matched value is the replacement String"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.redirectRewriteRules.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.redirectRewriteRules.items.properties.key.description
+"The credentials key"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.redirectRewriteRules.items.properties.key.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.redirectRewriteRules.items.properties.value.description
+"The credentials value"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.redirectRewriteRules.items.properties.value.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.registerNodeAtStartup.description
+"If register node at startup"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.registerNodeAtStartup.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.registerNodePeriod.description
+"Period for re-registering node"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.registerNodePeriod.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.resource.description
+"Resource Name"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.resource.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.scope.description
+"The OAuth2 scope parameter for DirectAccessGrantsLoginModule"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.scope.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.sslRequired.description
+"How SSL is required"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.sslRequired.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.tokenCookiePath.description
+"Cookie path for a cookie store"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.tokenCookiePath.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.tokenMinimumTimeToLive.description
+"Minimum time to refresh an active access token"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.tokenMinimumTimeToLive.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.tokenStore.description
+"Type of token store. session or cookie"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.tokenStore.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.trustStore.description
+"Path of a trust store"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.trustStore.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.trustStorePassword.description
+"Truststore password"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.trustStorePassword.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.turnOffChangeSessionIdOnLogin.description
+"If not to change session id on a successful login"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.turnOffChangeSessionIdOnLogin.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.useResourceRoleMappings.description
+"If to use resource role mappings"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.useResourceRoleMappings.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.verifyTokenAudience.description
+"Verify whether the token contains this client name (resource) as an audience"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.configuration.properties.verifyTokenAudience.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.moduleType.description
+"Type of KeycloakLoginModule directAccess or bearerToken"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.moduleType.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.name.description
+"Name for KeycloakLoginModule"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.keycloakLoginModules.items.properties.name.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.propertiesLoginModules.items.properties.name.description
+"Name for PropertiesLoginModule"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.propertiesLoginModules.items.properties.name.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.propertiesLoginModules.items.properties.users.items.properties.name.description
+"User name to be defined in properties login module"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.propertiesLoginModules.items.properties.users.items.properties.name.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.propertiesLoginModules.items.properties.users.items.properties.password.description
+"Password to be defined in properties login module"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.propertiesLoginModules.items.properties.users.items.properties.password.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.propertiesLoginModules.items.properties.users.items.properties.roles.description
+"Roles to be defined in properties login module"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.loginModules.properties.propertiesLoginModules.items.properties.users.items.properties.roles.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.brokerDomain.properties.loginModules.items.properties.debug.description
+"Debug option of login modules for broker/console domain"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.brokerDomain.properties.loginModules.items.properties.debug.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.brokerDomain.properties.loginModules.items.properties.flag.description
+"Flag of login modules for broker/console domain"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.brokerDomain.properties.loginModules.items.properties.flag.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.brokerDomain.properties.loginModules.items.properties.name.description
+"Name for login modules for broker/console domain"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.brokerDomain.properties.loginModules.items.properties.name.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.brokerDomain.properties.loginModules.items.properties.reload.description
+"Reload option of login modules for broker/console domain"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.brokerDomain.properties.loginModules.items.properties.reload.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.brokerDomain.properties.name.description
+"Name for the broker/console domain"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.brokerDomain.properties.name.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.consoleDomain.properties.loginModules.items.properties.debug.description
+"Debug option of login modules for broker/console domain"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.consoleDomain.properties.loginModules.items.properties.debug.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.consoleDomain.properties.loginModules.items.properties.flag.description
+"Flag of login modules for broker/console domain"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.consoleDomain.properties.loginModules.items.properties.flag.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.consoleDomain.properties.loginModules.items.properties.name.description
+"Name for login modules for broker/console domain"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.consoleDomain.properties.loginModules.items.properties.name.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.consoleDomain.properties.loginModules.items.properties.reload.description
+"Reload option of login modules for broker/console domain"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.consoleDomain.properties.loginModules.items.properties.reload.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.consoleDomain.properties.name.description
+"Name for the broker/console domain"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securityDomains.properties.consoleDomain.properties.name.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.broker.items.properties.match.description
+"The address match pattern of a security setting"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.broker.items.properties.match.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.broker.items.properties.permissions.items.properties.operationType.description
+"The operation type of a security setting"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.broker.items.properties.permissions.items.properties.operationType.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.broker.items.properties.permissions.items.properties.roles.description
+"The roles of a security setting"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.broker.items.properties.permissions.items.properties.roles.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.allowedList.items.properties.domain.description
+"The domain of allowedList"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.allowedList.items.properties.domain.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.allowedList.items.properties.key.description
+"The key of allowedList"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.allowedList.items.properties.key.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.defaultAccess.items.properties.method.description
+"The method of defaultAccess/roleAccess List"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.defaultAccess.items.properties.method.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.defaultAccess.items.properties.roles.description
+"The roles of defaultAccess/roleAccess List"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.defaultAccess.items.properties.roles.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.roleAccess.items.properties.accessList.items.properties.method.description
+"The method of defaultAccess/roleAccess List"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.roleAccess.items.properties.accessList.items.properties.method.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.roleAccess.items.properties.accessList.items.properties.roles.description
+"The roles of defaultAccess/roleAccess List"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.roleAccess.items.properties.accessList.items.properties.roles.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.roleAccess.items.properties.domain.description
+"The domain of roleAccess List"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.roleAccess.items.properties.domain.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.roleAccess.items.properties.key.description
+"The key of roleAccess List"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.authorisation.properties.roleAccess.items.properties.key.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.authenticatorType.description
+"The management authentication type"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.authenticatorType.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.host.description
+"The connector host for connecting to management"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.host.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.jmxRealm.description
+"The JMX realm of management"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.jmxRealm.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.keyStorePassword.description
+"The keystore password for management connector"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.keyStorePassword.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.keyStorePath.description
+"The keystore path for management connector"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.keyStorePath.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.keyStoreProvider.description
+"The keystore provider for management connector"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.keyStoreProvider.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.objectName.description
+"The JMX object name of management"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.objectName.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.passwordCodec.description
+"The password codec for management connector"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.passwordCodec.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.port.description
+"The connector port for connecting to management"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.port.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.rmiRegistryPort.description
+"The RMI registry port for management"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.rmiRegistryPort.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.secured.description
+"Whether management connection is secured"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.secured.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.trustStorePassword.description
+"The truststore password for management connector"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.trustStorePassword.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.trustStorePath.description
+"The truststore path for management connector"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.trustStorePath.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.trustStoreProvider.description
+"The truststore provider for management connector"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.connector.properties.trustStoreProvider.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.hawtioRoles.description
+"The roles allowed to login hawtio"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.securitySettings.properties.management.properties.hawtioRoles.description]
+
+.schema.openAPIV3Schema.properties.status.description
+"ActiveMQArtemisSecurityStatus defines the observed state of ActiveMQArtemisSecurity"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.status.description]
+

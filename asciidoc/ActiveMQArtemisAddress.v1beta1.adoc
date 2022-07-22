@@ -1,0 +1,231 @@
+# ActiveMQArtemisAddress.v1beta1
+
+
+.schema.openAPIV3Schema.description
+"ActiveMQArtemisAddress is the Schema for the activemqartemisaddresses API"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.description]
+
+.schema.openAPIV3Schema.properties.apiVersion.description
+"APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.apiVersion.description]
+
+.schema.openAPIV3Schema.properties.kind.description
+"Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.kind.description]
+
+.schema.openAPIV3Schema.properties.spec.description
+"ActiveMQArtemisAddressSpec defines the desired state of ActiveMQArtemisAddress"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.addressName.description
+"Address Name"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.addressName.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.applyToCrNames.description
+"Apply to the broker crs in the current namespace. A value of * or empty string means applying to all broker crs. Default apply to all broker crs"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.applyToCrNames.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.password.description
+"The user's password"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.password.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.autoCreateAddress.description
+"Whether auto create address"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.autoCreateAddress.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.autoDelete.description
+"Auto-delete the queue"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.autoDelete.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.autoDeleteDelay.description
+"Delay (Milliseconds) before auto-delete the queue"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.autoDeleteDelay.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.autoDeleteMessageCount.description
+"Message count of the queue to allow auto delete"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.autoDeleteMessageCount.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.configurationManaged.description
+" If the queue is configuration managed"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.configurationManaged.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.consumerPriority.description
+"Consumer Priority"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.consumerPriority.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.consumersBeforeDispatch.description
+"Number of consumers required before dispatching messages"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.consumersBeforeDispatch.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.delayBeforeDispatch.description
+"Milliseconds to wait for `consumers-before-dispatch` to be met before dispatching messages anyway"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.delayBeforeDispatch.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.durable.description
+"If the queue is durable or not"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.durable.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.enabled.description
+"If the queue is enabled"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.enabled.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.exclusive.description
+"If the queue is exclusive"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.exclusive.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.filterString.description
+"The filter string for the queue"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.filterString.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.groupBuckets.description
+"Number of messaging group buckets"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.groupBuckets.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.groupFirstKey.description
+"Header set on the first group message"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.groupFirstKey.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.groupRebalance.description
+"If rebalance the message group"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.groupRebalance.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.groupRebalancePauseDispatch.description
+"If pause message dispatch when rebalancing groups"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.groupRebalancePauseDispatch.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.ignoreIfExists.description
+"If ignore if the target queue already exists"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.ignoreIfExists.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.lastValue.description
+"If it is a last value queue"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.lastValue.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.lastValueKey.description
+"The property used for last value queue to identify last values"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.lastValueKey.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.maxConsumers.description
+"Max number of consumers allowed on this queue"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.maxConsumers.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.nonDestructive.description
+"If force non-destructive consumers on the queue"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.nonDestructive.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.purgeOnNoConsumers.description
+"Whether to delete all messages when no consumers connected to the queue"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.purgeOnNoConsumers.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.ringSize.description
+"The size the queue should maintain according to ring semantics"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.ringSize.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.routingType.description
+"The routing type of the queue"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.routingType.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.temporary.description
+"If the queue is temporary"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.temporary.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.user.description
+"The user associated with the queue"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueConfiguration.properties.user.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.queueName.description
+"Queue Name"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.queueName.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.removeFromBrokerOnDelete.description
+"Whether or not delete the queue from broker when CR is undeployed(default false)"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.removeFromBrokerOnDelete.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.routingType.description
+"The Routing Type"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.routingType.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.user.description
+"User name for creating the queue or address"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.user.description]
+
+.schema.openAPIV3Schema.properties.status.description
+"ActiveMQArtemisAddressStatus defines the observed state of ActiveMQArtemisAddress"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.status.description]
+

@@ -1,3 +1,37 @@
+import os
+@command
+def split(app):
+    """
+    Split yaml files 
+    """
+    with working_dir('build'):
+        builddir=get_current_dir()
+        for path in find("./", "*.yaml"):
+            
+            cmd = "yq -s '.spec.names.kind' " + path 
+            
+            result = call(cmd,"","shell=true")
+            print(result)
+    
+    # refine the files
+    with working_dir('build'):
+        print(get_current_dir())
+        for path in find("./", "*.yml"):
+            f = get_name_stem(path)
+            tempdir = get_user_temp_dir()
+            move(path,tempdir+ '/'+f+'.tmp')
+            with working_dir(tempdir):
+                cmd = "yq '.spec.versions.[]' " + f + ".tmp -s '.name'" 
+                result = call(cmd,"","shell=true")
+                print(result)
+                for path in find("./", "*.yml"):
+                    y= get_name_stem(path)
+                    print(y)
+                    versioned =  f+'.'+y+'.yml'
+                    move(path, builddir +'/' + versioned)
+
+
+
 
 @command
 def generate(app):
@@ -6,28 +40,27 @@ def generate(app):
     """
     with working_dir('build'):
         print(get_current_dir())
-        for path in find("./", "*.yml"):
+        for path in find("./", "*v1beta1.yml"):
             print(get_base_name(path))
 
-            
             # process json file using *jq* to get description paths (dpath)
-            cmd = "yq -o=json " + get_name_stem(path) + ".yaml > " + get_name_stem(path) + ".json"
+            cmd = "yq -o=json " + get_name_stem(path) + ".yml > " + get_name_stem(path) + ".json"
             
             result = call(cmd,"","shell=true")
-            print(result)
+            #print(result)
 
             cmd = "cat " + get_name_stem(path) + ".json" + "|jq -cf ../program.jq "
-            print('cmd:' + cmd)
+            #print('cmd:' + cmd)
             result = call(cmd,"","shell=true")
             #print(result)
 
             result = replace(result,'","','.' )
-            result = replace(result,'\["', get_name_stem(path)+'.' )
+            result = replace(result,'\["', '.' )
             result = replace(result,'"\]','' )
             # write dpath file
             write(get_name_stem(path) + ".dpath", result)
             
-            #print(result)
+            print(result)
 
 @command
 def populate(app):
@@ -41,6 +74,7 @@ def populate(app):
         for path in find("./", "*.dpath"):
             mdfile=get_name_stem(path)
             write('../pages/'+mdfile+'.md', '# '+ mdfile + '\npage:: ' +mdfile +'\n\n')
+            write('../asciidoc/'+mdfile+'.adoc', '# '+ mdfile + '\n\n\n')
 
             print(mdfile)
             for line in read_lines(path):
@@ -56,6 +90,7 @@ def populate(app):
                     
                     #write('../pages/'+ line +'.md', "# " +line + "\n\n" + result)
                     append('../pages/'+mdfile+'.md', '## '+heading +'\n\ntree:: [[' + line +']]\ndescription:: ' + result + '\n\n')
+                    append('../asciidoc/'+mdfile+'.adoc', line +'\n' + result + '\n\n'+'include::test.adoc[tags='+line+ ']\n\n')
 
                 except:
                     append('../pages/error.md', '## '+heading +'\n\ntree:: [[' + line +']]\ndescription:: Error \n\n')

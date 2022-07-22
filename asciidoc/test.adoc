@@ -1,0 +1,13 @@
+
+//tag::.schema.openAPIV3Schema.properties.spec.properties.adminUser.description[]
+If you do not specify a value, the value is automatically generated and stored in a secret. The default secret name has a format of `__<custom_resource_name>__-credentials-secret`. For example, `my-broker-deployment-credentials-secret`.
+
+*Type*: string
+
+*Example*: my-user
+
+*Default value*: Automatically-generated, random value
+//end::.schema.openAPIV3Schema.properties.spec.properties.adminUser.description[]
+
+
+

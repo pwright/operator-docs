@@ -1,0 +1,57 @@
+# ActiveMQArtemisScaledown.v1beta1
+
+
+.schema.openAPIV3Schema.description
+"ActiveMQArtemisScaledown is the Schema for the activemqartemisscaledowns API"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.description]
+
+.schema.openAPIV3Schema.properties.apiVersion.description
+"APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.apiVersion.description]
+
+.schema.openAPIV3Schema.properties.kind.description
+"Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.kind.description]
+
+.schema.openAPIV3Schema.properties.spec.description
+"ActiveMQArtemisScaledownSpec defines the desired state of ActiveMQArtemisScaledown"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.localOnly.description
+"Triggered by main ActiveMQArtemis CRD messageMigration entry"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.localOnly.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.resources.description
+"ResourceRequirements describes the compute resource requirements."
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.resources.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.resources.properties.limits.description
+"Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.resources.properties.limits.description]
+
+.schema.openAPIV3Schema.properties.spec.properties.resources.properties.requests.description
+"Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.spec.properties.resources.properties.requests.description]
+
+.schema.openAPIV3Schema.properties.status.description
+"ActiveMQArtemisScaledownStatus defines the observed state of ActiveMQArtemisScaledown"
+
+
+include::test.adoc[tags=.schema.openAPIV3Schema.properties.status.description]
+
